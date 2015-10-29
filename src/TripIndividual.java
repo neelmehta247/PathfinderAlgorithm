@@ -50,8 +50,8 @@ public class TripIndividual {
 
     public double getTime() {
         if (time == 0) { //If time is 0, it needs to be computed
+            double finalTime = 0;
             for (int i = 0; i < tripSize(); i++) {
-
                 LocationNode fromLocation = getLocation(i);
                 LocationNode destinationNode;
 
@@ -61,8 +61,9 @@ public class TripIndividual {
                     destinationNode = getLocation(0); //Return to the beginning
                 }
 
-                time += destinationNode.timeTillFinishedFrom(fromLocation);
+                finalTime += destinationNode.timeTillFinishedFrom(fromLocation);
             }
+            time = finalTime;
         }
         return time;
     }

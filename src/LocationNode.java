@@ -26,11 +26,11 @@ public class LocationNode {
         double distance = c * 6371; //km
 
         //Returns time in seconds. The time taken to finish the task should also be in seconds.
-        return distance / (20 / (60 * 60)); //Assuming 20 kmph. This will be different.
+        return distance / 20; //Assuming 20 kmph. This will be different.
     }
 
     public double timeTillFinishedFrom(LocationNode location) {
-        return timeFrom(location) + task.time_required;
+        return timeFrom(location) + task.time_required / 3600;
     }
 
     @Override
