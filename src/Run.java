@@ -101,7 +101,6 @@ public class Run {
         population = GeneticAlgorithm.evolvePopulation(population);
         for (int i = 0; i < 100; i++) {
             population = GeneticAlgorithm.evolvePopulation(population);
-            System.out.println("Time: " + population.getFittest().getTime() + "Solution: " + population.getFittest());
         }
 
         System.out.println("Finished");
