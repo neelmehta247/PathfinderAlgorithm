@@ -25,10 +25,16 @@ public class LocationNode {
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         double distance = c * 6371; //km
 
-        return distance / 20; //Assuming 20 kmph. This will be different.
+        //Returns time in seconds. The time taken to finish the task should also be in seconds.
+        return distance / (20 / (60 * 60)); //Assuming 20 kmph. This will be different.
     }
 
     public double timeTillFinishedFrom(LocationNode location) {
         return timeFrom(location) + task.time_required;
+    }
+
+    @Override
+    public String toString() {
+        return task.task;
     }
 }
