@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2321cce-6895-4f38-a0e6-39aa3893bc9b" name="Default" comment="Created a Population and a Genetic Algorithm main class to run the whole algorithm.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LocationNode.java" afterPath="$PROJECT_DIR$/src/LocationNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Run.java" afterPath="$PROJECT_DIR$/src/Run.java" />
+    <list default="true" id="c2321cce-6895-4f38-a0e6-39aa3893bc9b" name="Default" comment="Created a class to run the algorithm. Made some changes to the distance calculator.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PathfinderAlgorithm/LocationNode.class" afterPath="$PROJECT_DIR$/out/production/PathfinderAlgorithm/LocationNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PathfinderAlgorithm/Run.class" afterPath="$PROJECT_DIR$/out/production/PathfinderAlgorithm/Run.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GeneticAlgorithm.java" afterPath="$PROJECT_DIR$/src/GeneticAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Population.java" afterPath="$PROJECT_DIR$/src/Population.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TripIndividual.java" afterPath="$PROJECT_DIR$/src/TripIndividual.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Run.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Run.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44227007">
+            <state vertical-scroll-proportion="0.0">
               <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
               <folding />
             </state>
@@ -87,15 +89,15 @@
         <entry file="file://$PROJECT_DIR$/src/TripIndividual.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#2039#2040#0" expanded="true" />
-                <element signature="e#2078#2079#0" expanded="true" />
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2191#2192#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#2008#2009#0" expanded="true" />
+                <element signature="e#2047#2048#0" expanded="true" />
+                <element signature="e#2105#2106#0" expanded="true" />
+                <element signature="e#2160#2161#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,24 +107,24 @@
         <entry file="file://$PROJECT_DIR$/src/GeneticAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Population.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Population.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Population.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.3816047">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding>
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,11 +152,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/Task.java" />
         <option value="$PROJECT_DIR$/src/TripManager.java" />
-        <option value="$PROJECT_DIR$/src/Population.java" />
-        <option value="$PROJECT_DIR$/src/GeneticAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/TripIndividual.java" />
         <option value="$PROJECT_DIR$/src/LocationNode.java" />
         <option value="$PROJECT_DIR$/src/Run.java" />
+        <option value="$PROJECT_DIR$/src/GeneticAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/TripIndividual.java" />
+        <option value="$PROJECT_DIR$/src/Population.java" />
       </list>
     </option>
   </component>
@@ -421,12 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1446110794497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created a class to run the algorithm. Made some changes to the distance calculator.">
+      <created>1446139476153</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1446139476153</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -444,7 +452,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -467,14 +475,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added a TripManager which has all locations, a TripIndividual which is an individual in the population and changed the time calculating function." />
     <MESSAGE value="Created a Population and a Genetic Algorithm main class to run the whole algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Population and a Genetic Algorithm main class to run the whole algorithm." />
+    <MESSAGE value="Created a class to run the algorithm. Made some changes to the distance calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a class to run the algorithm. Made some changes to the distance calculator." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GeneticAlgorithm.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -541,42 +558,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Population.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding>
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripIndividual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2191#2192#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,19 +583,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GeneticAlgorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/Run.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Run.java">
+    <entry file="file://$PROJECT_DIR$/src/GeneticAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44227007">
-          <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TripIndividual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2160#2161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Population.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3816047">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

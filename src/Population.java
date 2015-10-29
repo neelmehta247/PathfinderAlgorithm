@@ -11,6 +11,7 @@ public class Population {
         if (initialise) {
             for (int i = 0; i < populationSize(); i++) {
                 TripIndividual individual = new TripIndividual();
+                individual.generateIndividual();
                 saveTrip(i, individual);
             }
         }

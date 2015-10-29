@@ -67,7 +67,7 @@ public class GeneticAlgorithm {
             endPosition = tmp;
         }
 
-        for (int i = startPosition; i <= endPosition; i++) {
+        for (int i = startPosition; i < endPosition; i++) {
             child.setLocation(i, parent1.getLocation(i));
         }
 

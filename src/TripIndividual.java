@@ -14,7 +14,6 @@ public class TripIndividual {
         for (int i = 0; i < TripManager.numberOfCities(); i++) {
             locations.add(null);
         }
-        generateIndividual();
     }
 
     public TripIndividual(ArrayList<LocationNode> locations) {
@@ -22,7 +21,7 @@ public class TripIndividual {
         generateIndividual();
     }
 
-    private void generateIndividual() {
+    public void generateIndividual() {
         for (int i = 0; i < TripManager.numberOfCities(); i++) {
             setLocation(i, TripManager.getLocation(i));
         }
