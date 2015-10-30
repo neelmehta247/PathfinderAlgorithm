@@ -95,11 +95,15 @@ public class Run {
         task15.task = "task15";
         TripManager.addTask(new LocationNode(task15));
 
+        runGA();
+    }
+
+    public static void runGA() {
         Population population = new Population(30, true); //After testing I found 30 is the optimum population size for result vs time taken
         System.out.println("Initial time taken: " + population.getFittest().getTime());
 
         population = GeneticAlgorithm.evolvePopulation(population);
-        for (int i = 0; i < 75; i++) { //After testing I found 75 generations gave the best result vs time
+        for (int i = 0; i < 100; i++) { //For a larger number of tasks, 100 might be better.
             population = GeneticAlgorithm.evolvePopulation(population);
         }
 
