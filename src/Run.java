@@ -99,7 +99,7 @@ public class Run {
         System.out.println("Initial time taken: " + population.getFittest().getTime());
 
         population = GeneticAlgorithm.evolvePopulation(population);
-        for (int i = 0; i < 55; i++) { //After testing I found 55 generations gave the best result vs time
+        for (int i = 0; i < 75; i++) { //After testing I found 75 generations gave the best result vs time
             population = GeneticAlgorithm.evolvePopulation(population);
         }
 
