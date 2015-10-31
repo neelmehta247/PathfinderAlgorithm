@@ -95,6 +95,8 @@ public class Run {
         task15.task = "task15";
         TripManager.addTask(new LocationNode(task15));
 
+        //TODO Add way to input time and the removing task mechanism.
+        //TODO considering a different number of tasks, what is the optimal population and generation size
         runGA();
     }
 
