@@ -110,13 +110,12 @@ public class Run {
         task15.task = "task15";
         TripManager.addTask(new LocationNode(task15));
 
-        //TODO Add way to input time and the removing task mechanism.
-        //TODO considering a different number of tasks, what is the optimal population and generation size
+        //TODO Add a preference for either deadline based removal, time taken based removal or composite
         runGA(15);
     }
 
     public static void runGA(double timeLimit) {
-        Population population = new Population(30, true); //After testing I found 30 is the optimum population size for result vs time taken
+        Population population = new Population(50, true); //After testing I found 50 is the optimum population size for result vs time taken
         System.out.println("\nInitial time taken: " + population.getFittest().getTime());
 
         population = GeneticAlgorithm.evolvePopulation(population);
