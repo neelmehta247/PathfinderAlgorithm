@@ -19,4 +19,14 @@ public class TripManager {
         return locationList.size();
     }
 
+    public static LocationNode removeLocation() {
+        LocationNode last = getLocation(0);
+        for (int i = 0; i < numberOfCities(); i++) {
+            if (getLocation(i).getTask().deadline > last.getTask().deadline) {
+                last = getLocation(i);
+            }
+        }
+        locationList.remove(last);
+        return last;
+    }
 }

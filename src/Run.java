@@ -97,10 +97,10 @@ public class Run {
 
         //TODO Add way to input time and the removing task mechanism.
         //TODO considering a different number of tasks, what is the optimal population and generation size
-        runGA();
+        runGA(15);
     }
 
-    public static void runGA() {
+    public static void runGA(double timeLimit) {
         Population population = new Population(30, true); //After testing I found 30 is the optimum population size for result vs time taken
         System.out.println("Initial time taken: " + population.getFittest().getTime());
 
@@ -113,5 +113,10 @@ public class Run {
         System.out.println("Final time: " + population.getFittest().getTime());
         System.out.println("Solution:");
         System.out.println(population.getFittest());
+
+        if (population.getFittest().getTime() > timeLimit) {
+            System.out.println("Removed: " + TripManager.removeLocation());
+            runGA(15);
+        }
     }
 }
