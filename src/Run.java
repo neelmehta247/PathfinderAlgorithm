@@ -110,7 +110,6 @@ public class Run {
         task15.task = "task15";
         TripManager.addTask(new LocationNode(task15));
 
-        //TODO Add a preference for either deadline based removal, time taken based removal or composite
         runGA(15);
     }
 
