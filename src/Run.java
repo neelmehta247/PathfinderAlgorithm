@@ -110,26 +110,32 @@ public class Run {
         task15.task = "task15";
         TripManager.addTask(new LocationNode(task15));
 
-        runGA(15);
+        //TODO Composite time vs deadline elimination
+
+        runGA(10);
     }
 
     public static void runGA(double timeLimit) {
+        int count = 0;
         Population population = new Population(50, true); //After testing I found 50 is the optimum population size for result vs time taken
-        System.out.println("\nInitial time taken: " + population.getFittest().getTime());
+        do {
+            if (count != 0) {
+                LocationNode remove = TripManager.removeLocation();
+                System.out.println("Removed: " + remove);
+                population.eliminate(remove);
+            }
+            System.out.println("\nInitial time taken: " + population.getFittest().getTime());
 
-        population = GeneticAlgorithm.evolvePopulation(population);
-        for (int i = 0; i < 100; i++) { //For a larger number of tasks, 100 might be better.
             population = GeneticAlgorithm.evolvePopulation(population);
-        }
+            for (int i = 0; i < 100; i++) { //For a larger number of tasks, 100 might be better.
+                population = GeneticAlgorithm.evolvePopulation(population);
+            }
 
-        System.out.println("Finished");
-        System.out.println("Final time: " + population.getFittest().getTime());
-        System.out.println("Solution:");
-        System.out.println(population.getFittest());
-
-        if (population.getFittest().getTime() > timeLimit) {
-            System.out.println("Removed: " + TripManager.removeLocation());
-            runGA(15);
-        }
+            System.out.println("Finished");
+            System.out.println("Final time: " + population.getFittest().getTime());
+            System.out.println("Solution:");
+            System.out.println(population.getFittest());
+            count++;
+        } while (population.getFittest().getTime() > timeLimit);
     }
 }
